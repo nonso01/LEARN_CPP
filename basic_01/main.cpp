@@ -3,10 +3,14 @@
 using namespace std;
 
 int fizzBuzz(int);
+
+int * big_num = 0;
+
 int main()
 {
 
-    fizzBuzz(20);
+    fizzBuzz(0x1a);
+    // cout << big_num;
     return 0;
 }
 
