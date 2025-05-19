@@ -2,22 +2,26 @@
 
 using namespace std;
 
+int fizzBuzz(int);
 int main()
 {
-    int loop(int);
 
-    loop(12);
-    //    cout << add << endl;
+    fizzBuzz(20);
     return 0;
 }
 
-int loop(int num)
+int fizzBuzz(int number)
 {
-    for (int i = 0; i < num; i++)
+    for (int i = 0; i < number; i++)
     {
-        if (i == 11)
-            break;
-        cout << i << endl;
+        if (i % 2 == 0)
+        {
+            cout << "fizz\n";
+        }
+        else
+        {
+            cout << "buzz\n";
+        }
     }
     return 0;
 }
