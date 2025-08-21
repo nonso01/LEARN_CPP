@@ -1,0 +1,8 @@
+{
+  "files.associations": {
+    "*.vue": "vue",
+    "*.cpp": "cpp",
+    "*.json": "json",
+    "string": "cpp"
+  }
+}

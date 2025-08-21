@@ -1,30 +1,39 @@
 #include <iostream>
 
-using namespace std;
+// using namespace std;
 
-int fizzBuzz(int);
-
-int * big_num = 0;
+int yourname(std::string name);
+int fizzbuzz(int number);
 
 int main()
 {
-
-    fizzBuzz(0x1a);
-    // cout << big_num;
+    // std::string name = "";
+    // yourname(name);
+    int number = 20;
+    fizzbuzz(20);
     return 0;
 }
 
-int fizzBuzz(int number)
+int yourname(std::string name)
+{
+    std::cout << "what is your name\n";
+    std::cin >> name;
+    std::cout << "Welcome " << name << "\n";
+
+    return 0;
+}
+
+int fizzbuzz(int number)
 {
     for (int i = 0; i < number; i++)
     {
         if (i % 2 == 0)
         {
-            cout << "fizz\n";
+            std::cout << "fizz even " << i << "\n";
         }
         else
         {
-            cout << "buzz\n";
+            std::cout << "buzz odd " << i << "\n";
         }
     }
     return 0;

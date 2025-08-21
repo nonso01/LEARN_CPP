@@ -1,0 +1,4 @@
+#! /bin/bash
+echo "compilling main.cpp in basic_01"
+
+g++ main.cpp -o main
